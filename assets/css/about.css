@@ -181,38 +181,6 @@ body {
 		max-width: 100%;
 		width: 70em;
 	}
-
-    @media screen and (max-width: 1680px) {
-
-			.container {
-				width: 68em;
-			}
-
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			.container {
-				width: calc(100% - 80px);
-			}
-
-		}
-
-		@media screen and (max-width: 980px) {
-
-			.container {
-				width: calc(100% - 100px);
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			.container {
-				width: calc(100% - 40px);
-			}
-
-		}
 /* -------------- MAIN -----------------  */
 
 #main {
@@ -261,9 +229,9 @@ body {
     position: relative;
     display: block;
     margin-top: 4px;
-    left: 37px;
+    left: 0px;
     /* top: 5px; */
-    width: 450px;
+    /* width: 450px; */
     text-align: start;
     font-size: 14px;
     color: slategrey;
@@ -338,8 +306,8 @@ body {
     position: relative;
     display: block;
     margin-top: 4px;
-    left: 37px;
-    width: 450px;
+    left: 0px;
+    /* width: 450px; */
     text-align: start;
     font-size: 14px;
     color: slategrey;
@@ -414,8 +382,8 @@ body {
     position: relative;
     display: block;
     margin-top: 4px;
-    left: 37px;
-    width: 450px;
+    left: 0px;
+    /* width: 450px; */
     text-align: start;
     font-size: 14px;
     color: slategrey;
@@ -490,4 +458,517 @@ body {
     right: 0;
     font-size: 44px;
     color: #d4d4d4;
+}
+/* Laptops */
+@media only screen and (max-width: 1215px) {
+    #main {
+        padding: 2em 0;
+    }
+    #main .top-content {
+        display: block;
+    }
+    #main .top-content .image-area {
+        display: block;
+        padding-bottom: 1em;
+    }
+    #main .top-content .description-area {
+        padding: 0;
+    }
+    #main .top-content .description-area span {
+        margin-top: 0;
+        padding: 0;
+    }
+    #main .top-content .description-area span p:nth-child(1) {
+        padding: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #main .middle-content {
+        /* display: flex; */
+        flex-direction: column;
+
+    }
+    #main .middle-content .image-area {
+        order: 1;
+        display: block;
+        padding-bottom: 1em;
+    }
+    #main .middle-content .description-area {
+        order: 2;
+        padding: 0;
+    }
+    #main .middle-content .description-area span {
+        margin-top: 0;
+        padding: 0;
+    }
+    #main .middle-content .description-area span p:nth-child(1) {
+        padding: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #main .bottom-content {
+        display: block;
+    }
+    #main .bottom-content .image-area {
+        display: block;
+        padding-bottom: 1em;
+    }
+    #main .bottom-content .description-area {
+        padding: 0;
+    }
+    #main .bottom-content .description-area span {
+        margin-top: 0;
+        padding: 0;
+    }
+    #main .bottom-content .description-area span p:nth-child(1) {
+        padding: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    #check, .checkBtn {
+        display: none;
+    }
+}
+
+/* Tablets */
+@media only screen and (max-width: 1023px) {
+    #header .nav-area .flex-nav .top-nav {
+        display: none;
+        /* width: 0; */
+    }
+    .top-nav ul li a {
+        display: none;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .top-nav ul li span {
+        display: none;
+    }
+    #header .nav-area .bottom-nav {
+        display: inline-block;
+        width: 100%;
+    }
+    .bottom-nav .left-logo {
+        float: left;
+        position: relative;
+        right: 20px;
+        /* display: contents; */
+    }
+    .flex-nav .bottom-nav .mn-nav {
+        border-top: none;
+        flex: none !important;
+    }
+    .bottom-nav .master-nav {
+        /* right: 20px !important; */
+        position: fixed !important;
+        width: 100% !important;
+        height: 100vh;
+        background: #d18072;
+        top: 80px !important;
+        right: -110% !important;
+        text-align: center;
+        z-index: 1;
+        transition: all .5s;
+    }
+    .bottom-nav .master-nav li {
+        display: block !important;
+        line-height: 80px !important;
+        margin: 50px 0px;
+        padding-right: 0 !important;
+    }
+    .master-nav li a {
+        font-size: 20px !important;
+    }
+    .master-nav li a:hover {
+        background: none !important;
+        color: rgb(59, 42, 39) !important;
+    }
+    .checkBtn {
+        font-size: 30px;
+        color: whitesmoke;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    #check {
+        display: none;
+    }
+    #check:checked ~ .mn-nav.options ul {
+        right: 0 !important;
+    }
+    #main {
+        padding: 1em 0;
+    }
+    #main .top-content {
+        display: block;
+    }
+    #main .top-content .image-area {
+        display: block;
+        padding-bottom: 1em;
+    }
+    #main .top-content .description-area {
+        padding: 0;
+    }
+    #main .top-content .description-area span {
+        margin-top: 0;
+        padding: 0;
+    }
+    #main .top-content .description-area span p {
+        padding: 0;
+    }
+    #main .top-content .description-area span p:nth-child(1) {
+        padding-bottom: 1em;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #main .top-content .description-area span p:nth-child(2) {
+        padding-bottom: 3em;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #main .middle-content .image-area {
+        display: block;
+        padding-bottom: 1em;
+    }
+    #main .middle-content .description-area {
+        padding: 0;
+    }
+    #main .middle-content .description-area span {
+        margin-top: 0;
+        padding: 0;
+    }
+    #main .middle-content .description-area span p {
+        padding: 0;
+    }
+    #main .middle-content .description-area span p:nth-child(1) {
+        padding-bottom: 1em;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #main .middle-content .description-area span p:nth-child(2) {
+        padding-bottom: 3em;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #main .bottom-content .image-area {
+        display: block;
+        padding-bottom: 1em;
+    }
+    #main .bottom-content .description-area {
+        padding: 0;
+    }
+    #main .bottom-content .description-area span {
+        margin-top: 0;
+        padding: 0;
+    }
+    #main .bottom-content .description-area span p {
+        padding: 0;
+    }
+    #main .bottom-content .description-area span p:nth-child(1) {
+        padding-bottom: 1em;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #main .bottom-content .description-area span p:nth-child(2) {
+        padding-bottom: 3em;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #footer {
+        padding: 5px 12px;
+    }
+    #footer .flex-container .name p {
+        margin-top: 25px;
+        font-size: 15px;
+    }
+    #footer .flex-container .payments .accepted-cards li {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    #footer {
+        padding: 0px 12px;
+    }
+    #footer .flex-container .name p {
+        margin-top: 24px;
+        /* font-size: 14px; */
+    }
+    #footer .flex-container .payments .accepted-cards li {
+        font-size: 35px;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    .bottom-nav .mn-nav .site-logo {
+        top: 8px;
+    }
+    .bottom-nav .mn-nav li a.logo {
+        font-size: 2.1rem;
+    }
+    #main .about-header {
+        font-size: 1.7em;
+    }
+    #main .top-content .image-area img {
+        width: 400px;
+        max-width: 400px;
+    }
+    #main .top-content .description-area span p {
+        font-size: 1em;
+    }
+    #main .middle-content .image-area img {
+        width: 400px;
+        max-width: 400px;
+    }
+    #main .middle-content .description-area span p {
+        font-size: 1em;
+    }
+    #main .bottom-content .image-area img {
+        width: 400px;
+        max-width: 400px;
+    }
+    #main .bottom-content .description-area span p {
+        font-size: 1em;
+    }
+    #footer {
+        padding: 0px 12px;
+    }
+    #footer .flex-container .name p {
+        margin-top: 24px;
+        font-size: 13.8px;
+    }
+    #footer .flex-container .payments .accepted-cards li {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .checkBtn {
+        font-size: 24px;
+    }
+    .bottom-nav .mn-nav .site-logo {
+        top: 15px;
+    }
+    .bottom-nav .mn-nav li a.logo {
+        font-size: 1.7rem;
+    }
+    .bottom-nav .master-nav {
+        /* right: 20px !important; */
+        position: fixed !important;
+        width: 100% !important;
+        height: 100vh;
+        background: #d18072;
+        top: 80px !important;
+        right: -120% !important;
+        text-align: center;
+        z-index: 1;
+        transition: all .5s;
+    }
+    .bottom-nav .master-nav li {
+        display: block !important;
+        line-height: 60px !important;
+        margin: 40px 0px;
+        padding-right: 0 !important;
+    }
+    .master-nav li a {
+        font-size: 20px !important;
+    }
+    #main {
+        padding: 1em 0;
+    }
+    #main .about-header {
+        font-size: 1.4em;
+    }
+    #main .top-content {
+        display: block;
+    }
+    #main .top-content .image-area {
+        display: block;
+        padding-bottom: 1em;
+    }
+    #main .top-content .image-area img {
+        width: 300px;
+        max-width: 300px;
+    }
+    #main .top-content .description-area {
+        padding: 0;
+    }
+    #main .top-content .description-area span {
+        margin-top: 0;
+        padding: 0;
+    }
+    #main .top-content .description-area span p {
+        padding: 0;
+        font-size: .9em;
+    }
+    #main .top-content .description-area span p:nth-child(1) {
+        padding-bottom: 1em;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #main .top-content .description-area span p:nth-child(2) {
+        padding-bottom: 3em;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #main .middle-content .image-area {
+        display: block;
+        padding-bottom: 1em;
+    }
+    #main .middle-content .image-area img {
+        width: 300px;
+        max-width: 300px;
+    }
+    #main .middle-content .description-area {
+        padding: 0;
+    }
+    #main .middle-content .description-area span {
+        margin-top: 0;
+        padding: 0;
+    }
+    #main .middle-content .description-area span p {
+        padding: 0;
+        font-size: .9em;
+    }
+    #main .middle-content .description-area span p:nth-child(1) {
+        padding-bottom: 1em;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #main .middle-content .description-area span p:nth-child(2) {
+        padding-bottom: 3em;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #main .bottom-content .image-area {
+        display: block;
+        padding-bottom: 1em;
+    }
+    #main .bottom-content .image-area img {
+        width: 300px;
+        max-width: 300px;
+    }
+    #main .bottom-content .description-area {
+        padding: 0;
+    }
+    #main .bottom-content .description-area span {
+        margin-top: 0;
+        padding: 0;
+    }
+    #main .bottom-content .description-area span p {
+        padding: 0;
+        font-size: .9em;
+    }
+    #main .bottom-content .description-area span p:nth-child(1) {
+        padding-bottom: 1em;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #main .bottom-content .description-area span p:nth-child(2) {
+        padding-bottom: 3em;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #footer {
+        padding: 0px 12px;
+    }
+    #footer .flex-container .name p {
+        margin-top: 22px;
+        font-size: 13px;
+    }
+    #footer .flex-container .payments .accepted-cards li {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #main {
+        padding: .5em 0;
+    }
+    #main .about-header {
+        font-size: 1.3em;
+    }
+    #main .top-content .image-area img {
+        width: 230px;
+        max-width: 230px;
+    }
+    #main .top-content .description-area span p {
+        font-size: .85em;
+    }
+    #main .top-content .description-area span p:nth-child(1) {
+        padding-bottom: 1em;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #main .top-content .description-area span p:nth-child(2) {
+        padding-bottom: 3em;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #main .middle-content .image-area {
+        display: block;
+        padding-bottom: 1em;
+    }
+    #main .middle-content .image-area img {
+        width: 230px;
+        max-width: 230px;
+    }
+    #main .middle-content .description-area span p {
+        padding: 0;
+        font-size: .85em;
+    }
+    #main .middle-content .description-area span p:nth-child(1) {
+        padding-bottom: 1em;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #main .middle-content .description-area span p:nth-child(2) {
+        padding-bottom: 3em;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #main .bottom-content .image-area {
+        display: block;
+        padding-bottom: 1em;
+    }
+    #main .bottom-content .image-area img {
+        width: 230px;
+        max-width: 230px;
+    }
+    #main .bottom-content .description-area {
+        padding: 0;
+    }
+    #main .bottom-content .description-area span {
+        margin-top: 0;
+        padding: 0;
+    }
+    #main .bottom-content .description-area span p {
+        padding: 0;
+        font-size: .85em;
+    }
+    #main .bottom-content .description-area span p:nth-child(1) {
+        padding-bottom: 1em;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #main .bottom-content .description-area span p:nth-child(2) {
+        padding-bottom: 3em;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #footer {
+        padding: 0px 9px;
+    }
+    #footer .flex-container .name p {
+        margin-top: 20px;
+        font-size: 10px;
+    }
+    #footer .flex-container .payments .accepted-cards li {
+        font-size: 13px;
+    }
 }

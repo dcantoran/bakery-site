@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="assets/css/about.css">
     <script src="https://kit.fontawesome.com/5388789c70.js" crossorigin="anonymous"></script>
@@ -20,26 +21,29 @@
                                 <li><a class="address"
                                         href="https://www.google.com/maps/place/Bakery/@41.2474905,-75.878164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c51a5e2556c805:0xfaaef32955f81ab3!8m2!3d41.2474905!4d-75.8759753"
                                         target="_blank">
-                                        <span><i class="fas fa-location-arrow"></i> 160 N Washington St, Wilkes Barre</span>
+                                        <span><i class="fas fa-location-arrow"></i> 100 N Washington St, Wilkes Barre</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="tel:5558920234"
+                                    <a href="tel:1234567890"
                                         onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});">
                                         <p class="call-button"><i class="fas fa-phone-square"></i> (570) 823-4567</p>
                                     </a>
                                 </li>
                                 <li><span><i class="fas fa-clock"></i> Mon-Sun: 6AM-7PM</span></li>
-                                <li><a href="https://www.facebook.com/Torres-Bakery-110797393956379/" target="_blank"><i
-                                            class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                                 <li><a href="#"><i class="fab fa-yelp"></i></a></li>
                             </ul>
                         </div>
                         <div class="bottom-nav">
+                            <input type="checkbox" id="check">
+                            <label for="check" class="checkBtn">
+                                <i class="fas fa-bars"></i>
+                            </label>
                             <div class="mn-nav left-logo">
                                 <ul class="site-logo">
-                                    <li><a class="logo" href="www.bake.com">Bakery</a></li>
+                                    <li><a class="logo" href="index.html">Bakery</a></li>
                                 </ul>
                             </div>
                             <div class="mn-nav options">
@@ -47,7 +51,7 @@
                                     <li><a class="home" href="index.html"><span>Home</span></a></li>
                                     <li><a class="menu" href="menu.html"><span>Menu</span></a></li>
                                     <li><a class="about" href="about.html"><span>About</span></a></li>
-                                    <li><a class="contact" href="contact.html"><span>Contact Us</span></a></li>
+                                    <li><a class="contact" href="contact.html"><span>Contact</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -65,8 +69,8 @@
                     <div class="flex image-area">
                         <span>
                             <img src="data:image/png;base64,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" alt="image-of-bakery-owners">
+                            <p>Left to right...</p>
                         </span>
-                        <p>Left to right...</p>
                     </div>
                     <div class="flex description-area">
                         <span>
@@ -104,17 +108,18 @@
                     </div>
                     <div class="flex image-area">
                         <span>
-                            <img src="https://cdn.vox-cdn.com/thumbor/J3YkpxI_tsQtNPxGfNTmx5GaNKY=/1400x0/filters:no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/6067575/pan-dulce-val.0.jpg" alt="image-of-bakery-owners">
+                            <img src="https://cdn.vox-cdn.com/thumbor/J3YkpxI_tsQtNPxGfNTmx5GaNKY=/1400x0/filters:no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/6067575/pan-dulce-val.0.jpg"
+                                alt="image-of-bakery-owners">
+                            <p>Left to right...</p>
                         </span>
-                        <p>Left to right...</p>
                     </div>
                 </div>
                 <div class="bottom-content">
                     <div class="flex image-area">
                         <span>
                             <img src="https://23riav46metlsa0hm48kjmo1-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/albees_cakes_11371028_1627881060827115_1493812413_n.jpg" alt="quinceanera-cake-image">
+                            <p>Left to right...</p>
                         </span>
-                        <p>Left to right...</p>
                     </div>
                     <div class="flex description-area">
                         <span>

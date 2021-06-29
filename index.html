@@ -5,6 +5,7 @@
     <head>
         <title>Bakery Site</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/5388789c70.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="assets/css/index.css">
         <link rel="stylesheet" href="assets/css/slick.css">
@@ -25,26 +26,30 @@
                                     <li><a class="address"
                                             href="https://www.google.com/maps/place/Bakery/@41.2474905,-75.878164,17z/data=!3m1!4b1!4m5!3m4!1s0x89c51a5e2556c805:0xfaaef32955f81ab3!8m2!3d41.2474905!4d-75.8759753"
                                             target="_blank">
-                                            <span><i class="fas fa-location-arrow"></i> 160 N Washington St, Wilkes Barre</span>
+                                            <span><i class="fas fa-location-arrow"></i> 100 N Washington St, Wilkes Barre</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="tel:5558920234"
+                                        <a href="tel:1234567890"
                                             onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});">
-                                            <p class="call-button"><i class="fas fa-phone-square"></i> (570) 823-4567</p>
+                                            <p class="call-button"><i class="fas fa-phone-square"></i> (123) 456-7890</p>
                                         </a>
                                     </li>
                                     <li><span><i class="fas fa-clock"></i> Mon-Sun: 6AM-7PM</span></li>
-                                    <li><a href="https://www.facebook.com/Torres-Bakery-110797393956379/" target="_blank"><i
+                                    <li><a href="#" target="_blank"><i
                                                 class="fab fa-facebook-f"></i></a></li>
                                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                                     <li><a href="#"><i class="fab fa-yelp"></i></a></li>
                                 </ul>
                             </div>
                             <div class="bottom-nav">
+                                <input type="checkbox" id="check">
+                                <label for="check" class="checkBtn">
+                                    <i class="fas fa-bars"></i>
+                                </label>
                                 <div class="mn-nav left-logo">
                                     <ul class="site-logo">
-                                        <li><a class="logo" href="www.bake.com">Bakery</a></li>
+                                        <li><a class="logo" href="index.html">Bakery</a></li>
                                     </ul>
                                 </div>
                                 <div class="mn-nav options">
@@ -52,7 +57,7 @@
                                         <li><a class="home" href="index.html"><span>Home</span></a></li>
                                         <li><a class="menu" href="menu.html"><span>Menu</span></a></li>
                                         <li><a class="about" href="about.html"><span>About</span></a></li>
-                                        <li><a class="contact" href="contact.html"><span>Contact Us</span></a></li>
+                                        <li><a class="contact" href="contact.html"><span>Contact</span></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -60,7 +65,7 @@
                     </div>
                 </div>
             </section>
-
+            <!-- Logo -->
             <section id="logo">
                 <div class="container">
                     <div class="brand-area">
@@ -92,7 +97,7 @@
             
                             <!-- Feature 1 -->
                             <section>
-                                <a class="image featured special" href="#"><img
+                                <a class="image featured special" href="menu.html"><img
                                         src="https://mxcity.mx/wp-content/uploads/2017/09/pan-dulce-mexicano.jpg" alt=""></a>
                                 <header>
                                     <h3>Pan Dulce</h3>
@@ -105,7 +110,7 @@
             
                             <!-- Feature 2 -->
                             <section>
-                                <a class="image featured special" href="#"><img
+                                <a class="image featured special" href="menu.html"><img
                                         src="https://www.isabeleats.com/wp-content/uploads/2018/02/tres-leches-cake-small-4.jpg"
                                         alt=""></a>
                                 <header>
@@ -119,18 +124,18 @@
             
                             <!-- Feature 3 -->
                             <section>
-                                <a class="image featured special" href="#"><img
+                                <a class="image featured special" href="menu.html"><img
                                         src="https://images.media-allrecipes.com/userphotos/8338654.jpg" alt=""></a>
                                 <header>
                                     <h3>Sandwiches</h3>
                                 </header>
-                                <p>Statement about Special 3</p>
+                                <p class="st-3">Statement about Special 3</p>
                                 <!-- <a href="#" class="button icon solid fa-file">Click Here</a> -->
                             </section>
                         </div>
                     </div>
                     <div class="menu-btn">
-                        <a href="#" class="button">View Menu</a>
+                        <a href="menu.html" class="button">View Menu</a>
                     </div>
                 </div>
             
@@ -211,9 +216,7 @@
                                 <p>The quote about the food<br>
                                     second line about the food<br>
                                     third line and below <br>
-                                    the fourth line and below the 4th<br>
-                                    the fifth line but <br>
-                                    will the 6xth line fit?
+                                    the fourth line
                                 </p>
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                                 <div class="triangle"></div>
@@ -264,8 +267,8 @@
                             </div>
                             <div class="icon details">
                                 <ul>
-                                    <li><p>160 N Washington Street, Wilkes Barre, Pennsylvania 18702</p></li>
-                                    <li><p>(570) 823-4567</p></li>
+                                    <li><p>100 N Washington Street, Wilkes Barre, Pennsylvania 18702</p></li>
+                                    <li><p>(123) 456-7890</p></li>
                                     <li><p>Mon-Fri: 6AM-7PM<br>Sat: 6AM-6PM<br>Sun: 6AM-2PM</p></li>
                                 </ul>
                             </div>
@@ -275,7 +278,7 @@
                                 <ul class="form-list">
                                     <li><input class="name" name="name" placeholder="Name" type="text"></li>
                                     <li><input class="email" type="text" name="email" placeholder="Email"></li>
-                                    <li><textarea type="text" name="message" placeholder="Message"></textarea></li>
+                                    <li><textarea class="message" type="text" name="message" placeholder="Message"></textarea></li>
                                     <li><input class="submit" type="submit" value="Submit"></li>
                                 </ul>
                             </form>
@@ -305,6 +308,7 @@
         </div>
 
         <!-- Scripts -->
+    
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
         </script>
@@ -375,5 +379,19 @@
         </i>
     </a>
     <br> -->
+
+    <!-- WP Form Arrival Me form code -->
+    <!-- <div class="acf7-first-wrapp">
+        <p><label>
+                [text* your-name placeholder "Your Name"] </label></p>
+        <p><label>
+                [email* your-email placeholder "Your Email"] </label></p>
+    </div>
+    <div class="acf7-second-wrapp">
+        <label>
+            [textarea your-message placeholder "Your Message"] </label>
+    
+        [submit "Send"]
+    </div> -->
 
 </html>
